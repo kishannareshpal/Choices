@@ -32,13 +32,13 @@ A vanilla, lightweight (~19kb gzipped 🎉), configurable select box/text input 
 With [NPM](https://www.npmjs.com/package/@kishannareshpal/choices):
 
 ```zsh
-npm install choices.js
+npm install @kishannareshpal/choices
 ```
 
 With [Yarn](https://yarnpkg.com/):
 
 ```zsh
-yarn add choices.js
+yarn add @kishannareshpal/choices
 ```
 
 From a [CDN](https://www.jsdelivr.com/package/npm/@kishannareshpal/choices):
