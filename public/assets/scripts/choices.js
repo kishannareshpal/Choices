@@ -1,6 +1,4 @@
-
-/*! @kishannareshpal/choices v9.0.1-1 | © 2021 Josh Johnson | https://github.com/kishannareshpal/Choices#readme */
-
+/*! @kishannareshpal/choices.js v9.0.1-3 | © 2021 Josh Johnson | https://github.com/kishannareshpal/Choices#readme */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -2979,7 +2977,7 @@ function () {
       }
 
       this.containerOuter.removeFocusState();
-      this.containerInner.removeFocusState();
+      this.containerInner.removeInnerFocusState();
       this.hideDropdown(true);
     }
   };
@@ -3041,7 +3039,7 @@ function () {
         if (target === _this.input.element) {
           _this.containerOuter.removeFocusState();
 
-          _this.containerInner.removeFocusState();
+          _this.containerInner.removeInnerFocusState();
 
           if (hasHighlightedItems_1) {
             _this.unhighlightAll();
@@ -3052,7 +3050,7 @@ function () {
       }, _b[constants_1.SELECT_ONE_TYPE] = function () {
         _this.containerOuter.removeFocusState();
 
-        _this.containerInner.removeFocusState();
+        _this.containerInner.removeInnerFocusState();
 
         if (target === _this.input.element || target === _this.containerOuter.element && !_this._canSearch) {
           _this.hideDropdown(true);
@@ -3061,7 +3059,7 @@ function () {
         if (target === _this.input.element) {
           _this.containerOuter.removeFocusState();
 
-          _this.containerInner.removeFocusState();
+          _this.containerInner.removeInnerFocusState();
 
           _this.hideDropdown(true);
 
@@ -3480,7 +3478,6 @@ function () {
           var shouldPreselect = _this._isSelectOneElement && !hasSelectedChoice && index === firstEnabledChoiceIndex;
           var isSelected = shouldPreselect ? true : choice.selected;
           var isDisabled = choice.disabled;
-          console.log(isDisabled, choice);
 
           _this._addChoice({
             value: value,

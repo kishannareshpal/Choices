@@ -1761,7 +1761,7 @@ class Choices {
       }
 
       this.containerOuter.removeFocusState();
-      this.containerInner.removeFocusState();
+      this.containerInner.removeInnerFocusState();
       this.hideDropdown(true);
     }
   }
@@ -1813,7 +1813,7 @@ class Choices {
         [TEXT_TYPE]: (): void => {
           if (target === this.input.element) {
             this.containerOuter.removeFocusState();
-            this.containerInner.removeFocusState();
+            this.containerInner.removeInnerFocusState();
             if (hasHighlightedItems) {
               this.unhighlightAll();
             }
@@ -1822,7 +1822,7 @@ class Choices {
         },
         [SELECT_ONE_TYPE]: (): void => {
           this.containerOuter.removeFocusState();
-          this.containerInner.removeFocusState();
+          this.containerInner.removeInnerFocusState();
           if (
             target === this.input.element ||
             (target === this.containerOuter.element && !this._canSearch)
@@ -1833,7 +1833,7 @@ class Choices {
         [SELECT_MULTIPLE_TYPE]: (): void => {
           if (target === this.input.element) {
             this.containerOuter.removeFocusState();
-            this.containerInner.removeFocusState();
+            this.containerInner.removeInnerFocusState();
             this.hideDropdown(true);
             if (hasHighlightedItems) {
               this.unhighlightAll();
@@ -2268,8 +2268,6 @@ class Choices {
 
           const isSelected = shouldPreselect ? true : choice.selected;
           const isDisabled = choice.disabled;
-
-          console.log(isDisabled, choice);
 
           this._addChoice({
             value,

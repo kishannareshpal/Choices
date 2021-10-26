@@ -49,7 +49,7 @@ From a [CDN](https://www.jsdelivr.com/package/npm/@kishannareshpal/choices):
 <!-- Include base CSS (optional) -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@kishannareshpal/choices/public/assets/styles/base.min.css"
+  href="https://cdn.jsdelivr.net/npm/@kishannareshpal/choices.js/public/assets/styles/base.min.css"
 />
 <!-- Or versioned -->
 <link
@@ -60,7 +60,7 @@ From a [CDN](https://www.jsdelivr.com/package/npm/@kishannareshpal/choices):
 <!-- Include Choices CSS -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@kishannareshpal/choices/public/assets/styles/choices.min.css"
+  href="https://cdn.jsdelivr.net/npm/@kishannareshpal/choices.js/public/assets/styles/choices.min.css"
 />
 <!-- Or versioned -->
 <link
@@ -69,7 +69,7 @@ From a [CDN](https://www.jsdelivr.com/package/npm/@kishannareshpal/choices):
 />
 
 <!-- Include Choices JavaScript (latest) -->
-<script src="https://cdn.jsdelivr.net/npm/@kishannareshpal/choices/public/assets/scripts/choices.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@kishannareshpal/choices.js/public/assets/scripts/choices.min.js"></script>
 <!-- Or versioned -->
 <script src="https://cdn.jsdelivr.net/npm/@kishannareshpal/choices@9.0.1-1/public/assets/scripts/choices.min.js"></script>
 ```
@@ -163,7 +163,7 @@ Or include Choices directly:
       groupHeading: 'choices__heading',
       button: 'choices__button',
       activeState: 'is-active',
-      containerFocusState: 'is-focused__containerInner',
+      containerInnerFocusState: 'is-focused__containerInner',
       focusState: 'is-focused',
       openState: 'is-open',
       disabledState: 'is-disabled',
