@@ -29,19 +29,19 @@ A vanilla, lightweight (~19kb gzipped 🎉), configurable select box/text input 
 
 ## Installation
 
-With [NPM](https://www.npmjs.com/package/@kishannareshpal/choices):
+With [NPM](https://www.npmjs.com/package/@kishannareshpal/choices.js):
 
 ```zsh
-npm install @kishannareshpal/choices
+npm install @kishannareshpal/choices.js
 ```
 
 With [Yarn](https://yarnpkg.com/):
 
 ```zsh
-yarn add @kishannareshpal/choices
+yarn add @kishannareshpal/choices.js
 ```
 
-From a [CDN](https://www.jsdelivr.com/package/npm/@kishannareshpal/choices):
+From a [CDN](https://www.jsdelivr.com/package/npm/@kishannareshpal/choices.js):
 
 **Note:** There is sometimes a delay before the latest version of Choices is reflected on the CDN.
 
